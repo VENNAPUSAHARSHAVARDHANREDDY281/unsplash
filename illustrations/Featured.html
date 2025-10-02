@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\unsplash\unsplash.css">
+    <link rel="icon" href="\unsplash\images\63061c6aaf6211fb49ecc46a.png">
+    <title>Unsplash</title>
+</head> 
+<body>
+    <div class="sidebar">
+        <a href="/unsplash/photos/Featured.html">
+        <img class="mainlogo" alt="unsplash-logo"  src="\unsplash\images\63061c6aaf6211fb49ecc46a.png">
+        </a>
+        <select id="dropdown-menu">
+            <option value="">Select</option>
+            <option value="/unsplash/photos/Featured.html">Pictures</option>
+            <option value="/unsplash/illustrations/Featured.html">Illustrations</option>
+        </select>
+        <input type="text" placeholder="Search free high-resolution photos" class="searchbar"id="input2">    
+    </div>
+    <div class="content">
+            <nav>
+                <ul>
+                        <li><a href="/unsplash/illustrations/Featured.html">Featured</a></li>
+                        <li><a href="/unsplash/illustrations/Hand Drawn.html">Hand Drawn</a></li>
+                        <li><a href="/unsplash/illustrations/3D.html">3D</a></li>
+                        <li><a href="/unsplash/illustrations/Flat.html">Flat</a></li>
+                </ul>
+            </nav>
+        <div >
+            <input type="text" placeholder="Search free high-resolution photos" class="searchbar"id="input1">
+        </div>
+        <div class="gallery">
+            
+                <img src="/unsplash/images/illustrations/feature/ahmed-hossam-g5R6Fy3rRBg-unsplash.jpg" alt="Abstract 3D illustration by Ahmed Hossam" />
+                <img src="/unsplash/images/illustrations/feature/andrei-castanha-g_uevXXrKSc-unsplash.jpg" alt="Creative digital artwork by Andrei Castanha" />
+                <img src="/unsplash/images/illustrations/feature/annie-spratt-sqj9nJNb-3w-unsplash.jpg" alt="Hand-drawn styled illustration by Annie Spratt" />
+                <img src="/unsplash/images/illustrations/feature/cansu-sarp-cuwJi_u1Ef4-unsplash.jpg" alt="Flat style illustration by Cansu Sarp" />
+                <img src="/unsplash/images/illustrations/feature/deep-_KnrxsF26HI-unsplash.jpg" alt="Digital abstract art by Deep" />
+                <img src="/unsplash/images/illustrations/feature/h-m-QdOF7-Z1Ogw-unsplash.jpg" alt="Colorful vector illustration by H M" />
+                <img src="/unsplash/images/illustrations/feature/hammam-fuad-ArIz_309jSs-unsplash.jpg" alt="Minimalist artwork by Hammam Fuad" />
+                <img src="/unsplash/images/illustrations/feature/jardel-vieira-vGbbdCvU9_8-unsplash.jpg" alt="3D illustration by Jardel Vieira" />
+                <img src="/unsplash/images/illustrations/feature/public-domain-vectors-rUqQLFUPwJ4-unsplash.jpg" alt="Free public domain vector illustration" />
+                <img src="/unsplash/images/illustrations/feature/rudra-k-ZYn7x1LkaEQ-unsplash.jpg" alt="Creative flat illustration by Rudra K" />
+                <img src="/unsplash/images/illustrations/feature/ved-H5MRSTeaXzA-unsplash.jpg" alt="Abstract hand-drawn illustration by Ved" />
+            
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("dropdown-menu").addEventListener("change", function() {
+        if (this.value) window.location.href = this.value;
+        });
+    </script>
+</body>
+</html>

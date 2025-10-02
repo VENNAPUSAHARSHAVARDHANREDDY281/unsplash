@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/unsplash/unsplash.css">
+    <link rel="icon" href="/unsplash/images/63061c6aaf6211fb49ecc46a.png">
+    <title>Nature</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="/unsplash/photos/Featured.html">
+            <img class="mainlogo" alt="unsplash-logo" src="/unsplash/images/63061c6aaf6211fb49ecc46a.png">
+        </a>
+        <select id="dropdown-menu">
+            <option value="">Select</option>
+            <option value="/unsplash/photos/Featured.html">Pictures</option>
+            <option value="/unsplash/illustrations/Featured.html">Illustrations</option>
+        </select>
+    </div>
+
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="/unsplash/photos/Featured.html">Featured</a></li>
+                <li><a href="/unsplash/photos/Nature.html">Nature</a></li>
+                <li><a href="/unsplash/photos/3D Renders.html">3D Renders</a></li>
+                <li><a href="/unsplash/photos/Film.html">Film</a></li>
+            </ul>
+        </nav>
+        <div class="gallery">
+            <img src="/unsplash/images/photos/nature/andrea-caramello-pKmzOCd5wgE-unsplash.jpg" alt="Nature landscape photography by Andrea Caramello">
+            <img src="/unsplash/images/photos/nature/annie-spratt-6iqr3JX2YYc-unsplash.jpg" alt="Beautiful nature scenery by Annie Spratt">
+            <img src="/unsplash/images/photos/nature/doncoombez-yVQu2Sado2A-unsplash.jpg" alt="Beautiful nature landscape by Don Coombez">
+            <img src="/unsplash/images/photos/nature/donnie-rosie-D6-ZlR8U5TE-unsplash.jpg" alt="Nature scene captured by Donnie Rosie">
+            <img src="/unsplash/images/photos/nature/jonas-degener-t4tn3SLE1z4-unsplash.jpg" alt="Forest and nature photography by Jonas Degener">
+            <img src="/unsplash/images/photos/nature/kristaps-ungurs-rmJAXI1OQAY-unsplash.jpg" alt="Scenic nature view by Kristaps Ungurs">
+            <img src="/unsplash/images/photos/nature/maksim-samuilionak-uymaeBza9KQ-unsplash.jpg" alt="Nature photograph by Maksim Samuilionak">
+            <img src="/unsplash/images/photos/nature/martin-bennie-pUOW-fNcNZ0-unsplash.jpg" alt="Landscape nature shot by Martin Bennie">
+            <img src="/unsplash/images/photos/nature/micah-sammie-chaffin-7GdwckDlP6k-unsplash.jpg" alt="Beautiful forest nature scene by Micah Sammie Chaffin">
+            <img src="/unsplash/images/photos/nature/nir-himi-lH6cje3KE_c-unsplash.jpg" alt="Nature photography by Nir Himi">
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("dropdown-menu").addEventListener("change", function() {
+        if (this.value) window.location.href = this.value;
+        });
+    </script>
+
+</body>
+</html>

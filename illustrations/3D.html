@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/unsplash/unsplash.css">
+    <link rel="icon" href="/unsplash/images/63061c6aaf6211fb49ecc46a.png">
+    <title>Unsplash - 3D Illustrations</title>
+</head> 
+<body>
+    <div class="sidebar">
+        <a href="/unsplash/photos/Featured.html">
+            <img class="mainlogo" src="/unsplash/images/63061c6aaf6211fb49ecc46a.png" alt="Unsplash main logo" />
+        </a>
+        <select id="dropdown-menu">
+            <option value="">Select</option>
+            <option value="/unsplash/photos/Featured.html">Pictures</option>
+            <option value="/unsplash/illustrations/Featured.html">Illustrations</option>
+        </select>
+        <input type="text" placeholder="Search free high-resolution photos" class="searchbar" id="input2" />    
+    </div>
+
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="/unsplash/illustrations/Featured.html">Featured</a></li>
+                <li><a href="/unsplash/illustrations/Hand Drawn.html">Hand Drawn</a></li>
+                <li><a href="/unsplash/illustrations/3D.html">3D</a></li>
+                <li><a href="/unsplash/illustrations/Flat.html">Flat</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <input type="text" placeholder="Search free high-resolution photos" class="searchbar" id="input1" />
+        </div>
+
+        <div class="gallery">
+            <img src="/unsplash/images/illustrations/3d/ahmed-hossam-Md9m_WOqMJE-unsplash.jpg" alt="3D abstract artwork by Ahmed Hossam" />
+            <img src="/unsplash/images/illustrations/3d/esma-melike-sezer-BFpa61bI58o-unsplash.jpg" alt="3D illustration by Esma Melike Sezer" />
+            <img src="/unsplash/images/illustrations/3d/masantocreative-tu8UHcHumDA-unsplash.jpg" alt="3D design by Masanto Creative" />
+            <img src="/unsplash/images/illustrations/3d/ogie-28PYAaijTME-unsplash.jpg" alt="3D artwork by Ogie" />
+            <img src="/unsplash/images/illustrations/3d/public-domain-vectors-0tR9WKDmAXc-unsplash.jpg" alt="Free 3D public domain vector illustration" />
+            <img src="/unsplash/images/illustrations/3d/public-domain-vectors-ZnlhOXwRjOo-unsplash.jpg" alt="3D vector illustration from public domain" />
+            <img src="/unsplash/images/illustrations/3d/riswan-ratta-eJWLrOq8cqs-unsplash.jpg" alt="3D digital art by Riswan Ratta" />
+            <img src="/unsplash/images/illustrations/3d/round-icons-p4IpyphtEWQ-unsplash.jpg" alt="3D icon design by Round Icons" />
+            <img src="/unsplash/images/illustrations/3d/ved-7zMmwc5MVHc-unsplash.jpg" alt="3D artwork by Ved (first illustration)" />
+            <img src="/unsplash/images/illustrations/3d/ved-IXWptmiC6hk-unsplash.jpg" alt="3D artwork by Ved (second illustration)" />
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("dropdown-menu").addEventListener("change", function() {
+            if (this.value) window.location.href = this.value;
+        });
+    });
+    </script>
+</body>
+</html>

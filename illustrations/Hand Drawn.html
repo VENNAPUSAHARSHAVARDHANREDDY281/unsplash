@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\unsplash\unsplash.css">
+    <link rel="icon" href="\unsplash\images\63061c6aaf6211fb49ecc46a.png">
+    <title>Unsplash</title>
+</head> 
+<body>
+    <div class="sidebar">
+        <a href="/unsplash/photos/Featured.html">
+        <img class="mainlogo" alt="unsplash-logo"  src="\unsplash\images\63061c6aaf6211fb49ecc46a.png">
+        </a>
+        <select id="dropdown-menu">
+            <option value="">Select</option>
+            <option value="/unsplash/photos/Featured.html">Pictures</option>
+            <option value="/unsplash/illustrations/Featured.html">Illustrations</option>
+        </select>
+        <input type="text" placeholder="Search free high-resolution photos" class="searchbar"id="input2">    
+    </div>
+    <div class="content">
+            <nav>
+                <ul>
+                        <li><a href="/unsplash/illustrations/Featured.html">Featured</a></li>
+                        <li><a href="/unsplash/illustrations/Hand Drawn.html">Hand Drawn</a></li>
+                        <li><a href="/unsplash/illustrations/3D.html">3D</a></li>
+                        <li><a href="/unsplash/illustrations/Flat.html">Flat</a></li>
+                </ul>
+            </nav>
+        <div >
+            <input type="text" placeholder="Search free high-resolution photos" class="searchbar"id="input1">
+        </div>
+        <div class="gallery">
+             <img src="\unsplash\images\illustrations\hand drawn\ahmed-hossam-uredr7gwNc0-unsplash.jpg" alt="Hand drawn sketch by Ahmed Hossam">
+            <img src="\unsplash\images\illustrations\hand drawn\al-nik-Gyb692HDQ9g-unsplash.jpg" alt="Creative hand drawn artwork by Al Nik">
+            <img src="\unsplash\images\illustrations\hand drawn\alyona-chipchikova-lnbUVetvwqs-unsplash.jpg" alt="Detailed hand drawn illustration by Alyona Chipchikova">
+            <img src="\unsplash\images\illustrations\hand drawn\annie-spratt-cJtlubZMFYU-unsplash.jpg" alt="Artistic hand drawn work by Annie Spratt">
+            <img src="\unsplash\images\illustrations\hand drawn\annie-spratt-rynRTSE3ai8-unsplash.jpg" alt="Hand drawn creative design by Annie Spratt">
+            <img src="\unsplash\images\illustrations\hand drawn\brenda-carolina-ortiz-diaz-Agmky1jAZ2g-unsplash.jpg" alt="Hand drawn artwork by Brenda Carolina Ortiz Diaz">
+            <img src="\unsplash\images\illustrations\hand drawn\cansu-sarp--omD2xvqVHc-unsplash.jpg" alt="Illustrated drawing by Cansu Sarp">
+            <img src="\unsplash\images\illustrations\hand drawn\esma-melike-sezer-gdPCFDQzqjI-unsplash.jpg" alt="Hand drawn illustration by Esma Melike Sezer">
+            <img src="\unsplash\images\illustrations\hand drawn\esma-melike-sezer-wcALSOg_MDk-unsplash.jpg" alt="Hand drawn illustration duplicate by Esma Melike Sezer">
+            <img src="\unsplash\images\illustrations\hand drawn\magier-wXqd2vZTdJQ-unsplash.jpg" alt="Hand drawn fantasy artwork by Magier">
+        </div>
+    </div>
+    <script>
+        document.getElementById("dropdown-menu").addEventListener("change", function() {
+        if (this.value) window.location.href = this.value;
+        });
+    </script>
+</body>
+
+</html>

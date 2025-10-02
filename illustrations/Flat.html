@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/unsplash/unsplash.css">
+    <link rel="icon" href="/unsplash/images/63061c6aaf6211fb49ecc46a.png">
+    <title>Unsplash - Flat Illustrations</title>
+</head> 
+<body>
+    <div class="sidebar">
+        <a href="/unsplash/photos/Featured.html">
+            <img class="mainlogo" src="/unsplash/images/63061c6aaf6211fb49ecc46a.png" alt="Unsplash main logo" />
+        </a>
+        <select id="dropdown-menu">
+            <option value="">Select</option>
+            <option value="/unsplash/photos/Featured.html">Pictures</option>
+            <option value="/unsplash/illustrations/Featured.html">Illustrations</option>
+        </select>
+        <input type="text" placeholder="Search free high-resolution photos" class="searchbar" id="input2" />    
+    </div>
+
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="/unsplash/illustrations/Featured.html">Featured</a></li>
+                <li><a href="/unsplash/illustrations/Hand Drawn.html">Hand Drawn</a></li>
+                <li><a href="/unsplash/illustrations/3D.html">3D</a></li>
+                <li><a href="/unsplash/illustrations/Flat.html">Flat</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <input type="text" placeholder="Search free high-resolution photos" class="searchbar" id="input1" />
+        </div>
+
+        <div class="gallery">
+            <img src="/unsplash/images/illustrations/flat/annie-spratt-yfUj9pzBAGc-unsplash.jpg" alt="Flat illustration by Annie Spratt" />
+            <img src="/unsplash/images/illustrations/flat/anny-cecilia-walter-ibhP2YMB1So-unsplash.jpg" alt="Flat illustration by Anny Cecilia Walter" />
+            <img src="/unsplash/images/illustrations/flat/bilqis-nur-amalia-9oreBzSecRg-unsplash.jpg" alt="Flat illustration by Bilqis Nur Amalia" />
+            <img src="/unsplash/images/illustrations/flat/bilqis-nur-amalia-oOcjEsfxuz4-unsplash.jpg" alt="Minimalist flat artwork by Bilqis Nur Amalia" />
+            <img src="/unsplash/images/illustrations/flat/hanin-abouzeid-DsECrB-Dd4E-unsplash.jpg" alt="Colorful flat design by Hanin Abouzeid" />
+            <img src="/unsplash/images/illustrations/flat/marchell-manuputty-aujmrgm_2iE-unsplash.jpg" alt="Flat vector illustration by Marchell Manuputty" />
+            <img src="/unsplash/images/illustrations/flat/prayag-aghara-zsFix0foHT0-unsplash.jpg" alt="Modern flat illustration by Prayag Aghara" />
+            <img src="/unsplash/images/illustrations/flat/thingsneverchange--AmyjUGwlOg-unsplash.jpg" alt="Creative flat art by ThingsNeverChange" />
+            <img src="/unsplash/images/illustrations/flat/ved-H5MRSTeaXzA-unsplash.jpg" alt="Abstract flat illustration by Ved" />
+            <img src="/unsplash/images/illustrations/flat/ved-z_M00lu62hw-unsplash.jpg" alt="Flat digital artwork by Ved" />
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("dropdown-menu").addEventListener("change", function() {
+            if (this.value) window.location.href = this.value;
+        });
+    });
+    </script>
+</body>
+</html>

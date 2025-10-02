@@ -1,0 +1,140 @@
+body {
+  display:flex;
+  font-family: Arial, sans-serif;
+}
+
+.searchbar {
+  flex: 1;
+  width:80%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin: 0 15px;
+}
+#input2{
+  display:none;
+}
+#input1{
+    display:block;
+}
+.sidebar {
+  padding:10px 0px;
+  display: flex;
+  flex-direction:column;
+  align-items: left;
+  margin-right:2px ;
+  border-right: 2px solid black; 
+}
+.sidebar img.mainlogo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.content{
+  display:block;
+}
+nav{
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+   border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-flex;
+  justify-content:left;
+  gap: 20px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  background-color: white;
+}
+ul li {
+  float: left;
+  flex:0 0 auto;
+}
+ul li a {
+  display: block;
+  color: rgb(27, 26, 26);
+  text-align: center;
+  padding: 14px 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+ul li a:hover {
+  background-color: whitesmoke;
+  border-radius: 6px;
+  border-bottom:2px solid black;
+}
+
+
+.gallery {
+  column-count: 3;
+  column-gap: 15px;
+  padding: 20px;
+}
+.gallery img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  cursor:zoom-in;
+}
+
+
+@media screen and (max-width: 650px) {
+  .gallery {
+    column-count: 2;
+  }
+  .sidebar {
+    display:flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction:column;
+    align-items: flex-start;
+  }
+  .searchbar {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  body{
+    display:block;
+  }
+  .mainlogo{
+    width:30px;
+    height:30px;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    align-items: center;
+    margin:0px 0px;
+    padding:0px;
+  }
+  #input1{
+    display:none;
+  }
+  #input2{
+    display:block;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top:0;
+  }
+  nav ul a{
+    padding:0px;
+  }
+  ul li a:hover {
+  background-color: whitesmoke;
+  }
+  .gallery {
+    column-count: 1;
+    padding: 10px;
+  }
+}

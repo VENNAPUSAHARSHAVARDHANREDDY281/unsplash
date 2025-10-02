@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/unsplash/unsplash.css">
+    <link rel="icon" href="/unsplash/images/63061c6aaf6211fb49ecc46a.png">
+    <title>Film</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="/unsplash/photos/Featured.html">
+            <img class="mainlogo" alt="unsplash-logo" src="/unsplash/images/63061c6aaf6211fb49ecc46a.png">
+        </a>
+        <select id="dropdown-menu">
+            <option value="">Select</option>
+            <option value="/unsplash/photos/Featured.html">Pictures</option>
+            <option value="/unsplash/photos/Featured.html">Illustrations</option>
+        </select>
+    </div>
+
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="/unsplash/photos/Featured.html">Featured</a></li>
+                <li><a href="/unsplash/photos/Nature.html">Nature</a></li>
+                <li><a href="/unsplash/photos/3D Renders.html">3D Renders</a></li>
+                <li><a href="/unsplash/photos/Film.html">Film</a></li>
+            </ul>
+        </nav>
+        <div class="gallery">
+            <img src="/unsplash/images/photos/film/albert-stoynov-yKn3cfE_XXU-unsplash.jpg" alt="Film photography by Albert Stoynov">
+            <img src="/unsplash/images/photos/film/aleksandr-artiushenko-rQT1iuokm60-unsplash.jpg" alt="Analog film shot by Aleksandr Artiushenko">
+            <img src="/unsplash/images/photos/film/alex-boyd-U8SFadiIcl8-unsplash.jpg" alt="Cinematic film photo by Alex Boyd">
+            <img src="/unsplash/images/photos/film/bhargav-panchal--mKCZaXwpfE-unsplash.jpg" alt="Film style photograph by Bhargav Panchal">
+            <img src="/unsplash/images/photos/film/cecelia-chang-xcpcSiM2qvw-unsplash.jpg" alt="Film photo captured by Cecelia Chang">
+            <img src="/unsplash/images/photos/film/chris-weiher-I3Fjx0gbdHk-unsplash.jpg" alt="Analog film photography by Chris Weiher">
+            <img src="/unsplash/images/photos/film/daniel-silva-b79NF66PrLc-unsplash.jpg" alt="Film aesthetic shot by Daniel Silva">
+            <img src="/unsplash/images/photos/film/bhargav-panchal-J9Wtgz2Emr8-unsplash.jpg" alt="Film photography by Bhargav Panchal">
+            <img src="/unsplash/images/photos/film/brooke-balentine-o19Ih_n-3U4-unsplash.jpg" alt="Analog style film photo by Brooke Balentine">
+            <img src="/unsplash/images/photos/film/brooke-balentine-UiJ1ckvMQbA-unsplash.jpg" alt="Film portrait by Brooke Balentine">
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("dropdown-menu").addEventListener("change", function() {
+        if (this.value) window.location.href = this.value;
+        });
+    </script>
+
+</body>
+</html>
