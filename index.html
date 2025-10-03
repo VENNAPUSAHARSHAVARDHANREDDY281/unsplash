@@ -1,1 +1,64 @@
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\unsplash\unsplash.css">
+    <link rel="icon" href="\unsplash\images\63061c6aaf6211fb49ecc46a.png">
+    <title>Unsplash</title>
+</head> 
+<body>
+
+    <div class="sidebar">
+        <a href="/unsplash/photos/Featured.html">
+        <img class="mainlogo" alt="unsplash-logo"  src="\unsplash\images\63061c6aaf6211fb49ecc46a.png">
+        </a>
+        
+        <select id="dropdown-menu">
+            <option value="">Select</option>
+            <option value="/unsplash/photos/Featured.html">Pictures</option>
+            <option value="/unsplash/illustrations/Featured.html">Illustrations</option>
+        </select>
+
+
+
+        <input type="text" placeholder="Search free high-resolution photos" class="searchbar"id="input2">
+        
+    </div>
+    <div class="content">
+            <nav>
+                <ul>
+                        <li><a href="/unsplash/photos/Featured.html">Featured</a></li>
+                        <li><a href="/unsplash/photos/Nature.html">Nature</a></li>
+                        <li><a href="/unsplash/photos/3D-Renders.html">3D Renders</a></li>
+                        <li><a href="/unsplash/photos/Film.html">Film</a></li>
+                </ul>
+            </nav>
+        <div >
+            <input type="text" placeholder="Search free high-resolution photos" class="searchbar"id="input1">
+        </div>
+        <div class="gallery">
+            <img src="/unsplash/images/photos/featured/brother-yoon-EuF9Q8htUYE-unsplash.jpg" alt="City street at night by Brother Yoon">
+            <img src="/unsplash/images/photos/featured/danial-d-_oLEyAHTZVs-unsplash.jpg" alt="Sunset mountain view by Danial D">
+            <img src="/unsplash/images/photos/featured/declan-sun-J9NFc4iJmrA-unsplash.jpg" alt="Golden forest landscape by Declan Sun">
+            <img src="/unsplash/images/photos/featured/kaden-taylor-JyB2QnjM5Bw-unsplash.jpg" alt="Snowy mountain peaks by Kaden Taylor">
+            <img src="/unsplash/images/photos/featured/kaden-taylor-RE2mHt6x4KA-unsplash.jpg" alt="Scenic valley and hills by Kaden Taylor">
+            <img src="/unsplash/images/photos/featured/lerone-pieters-Mq33R7YOto0-unsplash.jpg" alt="Urban cityscape by Lerone Pieters">
+            <img src="/unsplash/images/photos/featured/lerone-pieters-ZampKeF82ZE-unsplash.jpg" alt="Modern architecture building by Lerone Pieters">
+            <img src="/unsplash/images/photos/featured/marco-d-abramo-U41hNCYjWdM-unsplash.jpg" alt="Abstract art wall by Marco D’Abramo">
+            <img src="/unsplash/images/photos/featured/mike-hindle-LZI_BAe5JoE-unsplash.jpg" alt="Colorful painted artwork by Mike Hindle">
+            <img src="/unsplash/images/photos/featured/nastia-petruk-0yNcHdRL0OM-unsplash.jpg" alt="Nature plant close-up by Nastia Petruk">
+            <img src="/unsplash/images/photos/featured/nathan-gordon-BhTncwXqZGI-unsplash.jpg" alt="Ocean wave scene by Nathan Gordon">
+        </div>
+
+
+    </div>
+    <script>
+        document.getElementById("dropdown-menu").addEventListener("change", function() {
+        if (this.value) window.location.href = this.value;
+        });
+    </script>
+</body>
+
+</html>
